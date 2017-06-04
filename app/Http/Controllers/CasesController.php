@@ -161,7 +161,7 @@ class CasesController extends Controller
     }
 
     public function logs() {
-        $logs = auth()->user()->casesLogs;
+        $logs = auth()->user()->casesLogs()->paginate(20);
         return view('cases.logs', compact('logs'));
     }
 

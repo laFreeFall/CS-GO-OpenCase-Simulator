@@ -33,6 +33,9 @@
                     @empty
                         <p>There are no cases logs at the moment.</p>
                     @endforelse
+                    <div class="text-center">
+                        {{ $logs->links() }}
+                    </div>
                 </div>
             </div>
         </div>

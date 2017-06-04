@@ -62,7 +62,7 @@ class User extends Authenticatable
 
     public function getMoneyAttribute() {
 //        return number_format($this->items()->sum('price'), 0, ',', '.');
-        return $this->items()->sum('price');
+        return number_format($this->items()->sum('price'), 2);
     }
 
     public function getMoneyDotsAttribute() {

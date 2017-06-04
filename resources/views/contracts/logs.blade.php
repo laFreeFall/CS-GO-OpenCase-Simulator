@@ -32,7 +32,9 @@
                         @empty
                             <p>there are no contracts</p>
                         @endforelse
-
+                        <div class="text-center">
+                            {{ $contracts->links() }}
+                        </div>
                             {{--<div class="contract-log row">--}}
                                 {{--<div class="contract-log-info">--}}
                                     {{--{{ $contract->id }}--}}

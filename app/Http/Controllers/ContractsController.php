@@ -137,7 +137,7 @@ class ContractsController extends Controller
             ->join('contracts_logs', 'contracts_logs.id', '=', 'contract_item.contract_id')
             ->get();
         $items = $items->groupBy('contract_id');
-        $contracts = ContractLog::orderBy('id', 'desc')->get();
+        $contracts = ContractLog::orderBy('id', 'desc')->paginate(10);
         return view('contracts.logs', compact('contracts', 'items'));
     }
 
