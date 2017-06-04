@@ -1,0 +1,1169 @@
+/* ==========================================================================
+   col-md-5ths styles for 5 items in a row
+   ========================================================================== */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+/* ==========================================================================
+   Colors for weapons rarities
+   ========================================================================== */
+
+.item-border,
+.item-border-st,
+.item-border-sv {
+    width: 136px;
+    border-radius: 5px;
+}
+
+.item-border {
+    border: 3px solid;
+}
+
+.item-border-st {
+    border-top: 3px solid rgb(207, 106, 50);
+    border-bottom: 3px solid;
+    background-size: 3px 100%;
+    background-position: 0% 0%, 100% 0%;
+    background-repeat:no-repeat;
+}
+
+.item-border-sv {
+    border-top: 3px solid rgb(255, 215, 0);
+    border-bottom: 3px solid;
+    background-size: 3px 100%;
+    background-position: 0% 0%, 100% 0%;
+    background-repeat:no-repeat;
+}
+
+.item-background-consumer {
+    background-color: rgb(176, 195, 217);
+}
+
+.item-color-consumer {
+    color: rgb(176, 195, 217);
+}
+
+.item-border-consumer {
+    border-color: rgb(176, 195, 217);
+}
+
+.item-border-consumer-sv {
+    border-bottom-color: rgb(176, 195, 217);
+    background-image: linear-gradient(rgb(255, 215, 0), rgb(176, 195, 217)), linear-gradient(rgb(255, 215, 0), rgb(176, 195, 217));
+}
+
+.item-background-mil-spec {
+    background-color: rgb(75, 105, 255);
+    /*background-color: #4B69FF;*/
+}
+
+.item-color-mil-spec {
+    color: rgb(75, 105, 255);
+}
+
+.item-border-mil-spec {
+    border-color: rgb(75, 105, 255);
+}
+
+.item-border-mil-spec-st {
+    border-bottom-color: rgb(75, 105, 255);
+    background-image: linear-gradient(rgb(207, 106, 50), rgb(75, 105, 255)), linear-gradient(rgb(207, 106, 50), rgb(75, 105, 255));
+}
+
+.item-border-mil-spec-sv {
+    border-bottom-color: rgb(75, 105, 255);
+    background-image: linear-gradient(rgb(255, 215, 0), rgb(75, 105, 255)), linear-gradient(rgb(255, 215, 0), rgb(75, 105, 255));
+}
+
+.item-background-industrial {
+    background-color: rgb(94, 152, 217);
+}
+
+.item-color-industrial {
+    color: rgb(94, 152, 217);
+}
+
+.item-border-industrial {
+    border-color: rgb(94, 152, 217);
+}
+
+.item-border-industrial-st {
+    border-bottom-color: rgb(94, 152, 217);
+    background-image: linear-gradient(rgb(207, 106, 50), rgb(94, 152, 217)), linear-gradient(rgb(207, 106, 50), rgb(94, 152, 217));
+}
+
+.item-border-industrial-sv {
+    border-bottom-color: rgb(94, 152, 217);
+    background-image: linear-gradient(rgb(255, 215, 0), rgb(94, 152, 217)), linear-gradient(rgb(255, 215, 0), rgb(94, 152, 217));
+}
+
+.item-background-restricted {
+    background-color: rgb(136, 71, 255);
+}
+
+.item-color-restricted {
+    color: rgb(136, 71, 255);
+}
+
+.item-border-restricted {
+    border-color: rgb(136, 71, 255);
+}
+
+.item-border-restricted-st {
+    border-bottom-color: rgb(136, 71, 255);
+    background-image: linear-gradient(rgb(207, 106, 50), rgb(136, 71, 255)), linear-gradient(rgb(207, 106, 50), rgb(136, 71, 255));
+}
+
+.item-border-restricted-sv {
+    border-bottom-color: rgb(136, 71, 255);
+    background-image: linear-gradient(rgb(255, 215, 0), rgb(136, 71, 255)), linear-gradient(rgb(255, 215, 0), rgb(136, 71, 255));
+}
+
+.item-background-classified {
+    background-color: rgb(211, 44, 230);
+}
+
+.item-color-classified {
+    color: rgb(211, 44, 230);
+}
+
+.item-border-classified {
+    border-color: rgb(211, 44, 230);
+}
+
+.item-border-classified-st {
+    border-bottom-color: rgb(211, 44, 230);
+    background-image: linear-gradient(rgb(207, 106, 50), rgb(211, 44, 230)), linear-gradient(rgb(207, 106, 50), rgb(211, 44, 230));
+}
+
+.item-border-classified-sv {
+    border-bottom-color: rgb(211, 44, 230);
+    background-image: linear-gradient(rgb(255, 215, 0), rgb(211, 44, 230)), linear-gradient(rgb(255, 215, 0), rgb(211, 44, 230));
+}
+
+.item-background-covert {
+    background-color: rgb(235, 75, 75);
+}
+
+.item-color-covert {
+    color: rgb(235, 75, 75);
+}
+
+.item-border-covert {
+    border-color: rgb(235, 75, 75);
+}
+
+.item-border-covert-st {
+    border-bottom-color: rgb(235, 75, 75);
+    background-image: linear-gradient(rgb(207, 106, 50), rgb(235, 75, 75)), linear-gradient(rgb(207, 106, 50), rgb(235, 75, 75));
+}
+
+.item-border-covert-sv {
+    border-bottom-color: rgb(235, 75, 75);
+    background-image: linear-gradient(rgb(255, 215, 0), rgb(235, 75, 75)), linear-gradient(rgb(255, 215, 0), rgb(235, 75, 75));
+}
+
+.item-background-rare {
+    background-color: rgb(255, 215, 0);
+    /*background-color: #FFD700;*/
+}
+
+.item-color-rare {
+    color: rgb(255, 215, 0);
+}
+
+.item-border-rare{
+    border-color: rgb(255, 215, 0);
+}
+
+.item-border-rare-st {
+    border-bottom-color: #FFD700;
+    background-image: linear-gradient(rgb(207, 106, 50), rgb(255, 215, 0)), linear-gradient(rgb(207, 106, 50), rgb(255, 215, 0));
+}
+
+.item-border-stattrak {
+    border-color: rgb(207, 106, 50);
+}
+
+.item-border-souvenir {
+    border-color: rgb(255, 215, 0);
+}
+
+
+/* ==========================================================================
+   Item
+   ========================================================================== */
+
+.item {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 70px;
+}
+
+.item-title-weapon,
+.item-title-pattern {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*
+   Items corner buttons (condition, stattrak, price, amount)
+   ========================================================================== */
+
+.item-btn:hover {
+    cursor: default;
+}
+
+.item-btn {
+    font-family: sans-serif;
+}
+
+.item-condition-btn:hover,
+.item-price-btn:hover,
+.item-amount-btn:hover {
+    background-color: #fff;
+    cursor: default;
+}
+
+.item-condition-btn,
+.item-stattrak-btn,
+.item-price-btn {
+    border-top-left-radius: 0;
+}
+
+.item-condition-btn,
+.item-stattrak-btn,
+.item-amount-btn {
+    border-top-right-radius: 0;
+}
+
+.item-condition-btn,
+.item-price-btn,
+.item-amount-btn {
+    border-bottom-left-radius: 0;
+}
+
+.item-stattrak-btn,
+.item-price-btn,
+.item-amount-btn {
+    border-bottom-right-radius: 0;
+}
+
+.item-stattrak-btn {
+    background-color: rgb(207, 106, 50);
+    color: #fff;
+}
+
+.item-souvenir-btn {
+    background-color: rgb(255, 215, 0);
+}
+
+
+.item-price-btn {
+    margin-top: -57px;
+}
+
+.item-amount-btn {
+    margin-top: -27px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.item-disabled,
+.item-disabled:hover {
+    cursor: not-allowed;
+}
+
+.item-dizabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.condition-fn {
+	background-color: #ccc;
+}
+
+
+/*
+   Progress page
+   ========================================================================== */
+
+.progress-case {
+    width: 200px;
+    position: relative;
+}
+
+.progress-case-image {
+    width: 150px;
+}
+
+.progress-case-title {
+
+}
+
+.collector-case-icon {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.collector-case-icon-yes {
+    color: green;
+}
+
+.collector-case-icon-no {
+    color: red;
+}
+.progress-knife-block {
+    margin-bottom: 50px;
+}
+
+.progress-knife-image {
+    width: 300px;
+}
+/*
+   Items image
+   ========================================================================== */
+
+.item-image-block {
+    height: 100px;
+    background: linear-gradient(to bottom, #e1e1e1 0%, #a9b1b4 100%);
+}
+
+.item-image {
+    width: 110px;
+    position: relative;
+    top: -12px;
+}
+
+/*
+   Items text
+   ========================================================================== */
+
+.item-title-weapon,
+.item-title-pattern {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.item-title-weapon {
+    font-weight: bold;
+    padding-top: 1px;
+}
+
+.item-wrap {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==========================================================================
+   Cases Page
+   ========================================================================== */
+
+.case {
+    margin-bottom: 70px;
+}
+
+.case-price {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.case-image {
+    height: 150px;
+}
+
+.case-title {
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.collection-image {
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+
+.tooltip_templates {
+    display: none;
+}
+
+.case-tooltip-souvenir {
+    color: rgb(255, 215, 0);
+    font-style: italic;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.case-log-case-image {
+    width: 100px;
+    /*margin-right: 100px;*/
+}
+
+.case-log-item-block {
+    margin-right: -600px;
+}
+
+.case-log {
+    /*display: block;*/
+}
+
+.case-log {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* ==========================================================================
+   Case Item
+   ========================================================================== */
+
+.item-abstract-image {
+    top: 8px;
+}
+
+
+/* ==========================================================================
+   Items Roulette (Case opening)
+   ========================================================================== */
+
+#items-roulette-window,
+#items-roulette-window-shadow,
+#items-roulette-window-line {
+    height: 143px;
+}
+
+#items-roulette-window {
+    width: 450px;
+    border: 2px solid #999;
+    border-radius: 3px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#items-roulette-window-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    box-shadow: inset 40px 0 50px -20px rgba(0, 0, 0, 0.7), inset -40px 0 50px -20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+#items-roulette-window-line {
+    position: absolute;
+    top: 0;
+    left: 223px;
+    width: 2px;
+    background-color: gold;
+    z-index: 10;
+}
+
+#items-roulette-spinnable {
+    height: 210px;
+    width: 20000px;
+    overflow: hidden;
+}
+
+.items-roulette-item {
+    /*display: inline-block;*/
+    float: left;
+    margin-right: 3px;
+}
+
+@media screen and (max-width:780px){
+   #btn-open-case {
+	   width: 600px;
+	   height: 700px;
+   }
+}
+
+
+/* ==========================================================================
+   Shop
+   ========================================================================== */
+
+.shop-item {
+    color: #fff;
+    font-weight: bold;
+}
+.shop-item-inner {
+    /*opacity: 0.5;*/
+    /*color: #000;*/
+
+}
+
+
+/* ==========================================================================
+   Items Opencase Modal Window With Opened Item
+   ========================================================================== */
+
+
+.fa-spin {
+    animation: fa-spin 15s infinite linear;
+}
+
+#opencase-modal-new-item {
+    /*position: absolute;*/
+}
+
+.modal-star-bg{
+    font-size: 250px;
+    z-index: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 12%;
+}
+
+.modal-item-image {
+    height: 200px;
+
+    margin-bottom: 30px;
+    position: relative;
+    top: 25px;
+}
+
+.modal-confirm-item-image {
+    height: 150px;
+}
+
+.modal-item-name {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+/* ==========================================================================
+   Contracts
+   ========================================================================== */
+
+.contract-items {
+    display: inline-block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.contract-item {
+    /*width: 185px;*/
+    height: 150px;
+    margin-bottom: 20px;
+    /*margin-left: 15px;*/
+    /*outline: 1px solid green;*/
+    padding-left: 0;
+}
+
+.contract-inner-item {
+    margin: 0 auto;
+    /*padding-left: 0;*/
+}
+
+.contract-item-empty {
+    background-image: url("../images/contract_empty.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.contract-item-filled {
+    /*margin-right:  50px;*/
+    /*height: 150px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contract-tooltip-item {
+    color: #fff;
+    opacity: 0.6;
+}
+
+#contract-probability {
+    /*display: inline-block;*/
+    /*outline: 1px solid gold;*/
+}
+
+#contract-probability-btn {
+    margin-bottom: 20px;
+}
+
+.contract-probability-item .case-item-image {
+    margin-top: -20px;
+}
+
+.contract-probability-item {
+    /*margin: 30px;*/
+    /*margin-right: 150px;*/
+    /*display: inline-block;*/
+    /*margin: 0 auto;*/
+    /*outline: 1px solid green;*/
+}
+
+#contract-probability-inner {
+    /*outline: 1px solid red;*/
+    /*display: inline-block;*/
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ==========================================================================
+   Diamonds Roulette
+   ========================================================================== */
+
+.diamonds-roulette-item {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.diamonds-roulette-inner-text {
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.diamonds-roulette-bg-red {
+    background-color: #b04a43;
+}
+
+.diamonds-roulette-red {
+    color: #b04a43;
+}
+
+.diamonds-roulette-bg-black {
+    background-color: #444;
+}
+
+.diamonds-roulette-black {
+    color: #444;
+}
+
+.diamonds-roulette-bg-green {
+    background-color: #6fb26b;
+}
+
+.diamonds-roulette-green {
+    color: #6fb26b;
+}
+
+.diamonds-roulette-spinnable {
+    width: 20000px;
+ }
+
+#diamonds-roulette-window {
+    height: 70px;
+    width: 1050px;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#diamonds-roulette-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 1050px;
+    box-shadow: inset 50px 0 50px -20px rgba(0, 0, 0, 0.8), inset -50px 0 50px -20px rgba(0, 0, 0, 0.8);
+
+}
+
+.diamonds-roulette-item {
+    width: 70px;
+    float: left;
+}
+
+#diamonds-roulette-window-line {
+    position: absolute;
+    top: 0;
+    left: 525px;
+    height: 70px;
+    width: 3px;
+    background-color: #ccc;
+    z-index: 10;
+    display:none;
+}
+
+.last-rolls {
+    display: inline-block;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.last-roll {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 3px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.last-roll:last-of-type {
+    margin-right: 0;
+}
+
+.bets-col-head:hover,
+.bets-col-head:active,
+.bets-col-head:visited
+{
+    color: #fff;
+    opacity: 0.8;
+}
+
+.user-input {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.user-input button, .user-input form{
+    float: left;
+    margin-right: 5px;
+}
+
+#user-input-bet {
+    width: 120px;
+}
+
+#btn-roulette-spin {
+    margin-top: 15px;
+    width: 100px;
+}
+
+#user-input-balance-block {
+    background-color: #b04a43;
+    color: #fff;
+}
+.user-input-button {
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #4d4d4f;
+}
+#user-input-clear {
+    border-color: #d43f3a;
+}
+
+#user-input-max {
+    border-color: #337ab7;
+}
+
+.bets-col-head {
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.bets-col-head,
+.bets-col-own-bet,
+#bets-col-total-bet,
+.user-bet-sign {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bets-col-own-bet {
+    height: 30px;
+    margin-top: 60px;
+}
+
+#top-status {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.bets-col-total-bet {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.roulette-won {
+    color: #6fb26b;
+}
+
+.roulette-lost {
+    color: #b04a43;
+}
+
+
+/* ==========================================================================
+   Coin Flip
+   ========================================================================== */
+
+.coinflip-coin-container {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    perspective: 1000;
+}
+
+.coinflip-coin-block {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 5.0s cubic-bezier(0,0.1,0.6,1);
+    /*transition: all 4.0s ease-in-out;*/
+}
+
+.coinflip-coin-container:hover .coinflip-coin-block {
+    /*transform: rotateY(180deg);*/
+}
+
+.coinflip-coin {
+    /*width: 200px;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.coinflip-coin.coinflip-coin-t {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+
+}
+
+.coinflip-list-item {
+    opacity: 0.7;
+    color: #fff;
+    overflow: hidden;
+}
+
+.coinflip-item-price {
+    margin-top: -3px;
+    line-height: 15px;
+    color: #000;
+    /*opacity: 1;*/
+    font-family: sans-serif;
+}
+
+.coinflip-items-list {
+    margin-top: 50px;
+    /*display:none;*/
+}
+.coinflip-user-items-list,
+#btn-try-again {
+    display: none;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+.modal-header-success {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5cb85c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-header-warning {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #f0ad4e;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-header-danger {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #d9534f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-header-info {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5bc0de;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-header-primary {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #428bca;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.avatar-block {
+    height: 150px;
+    position: relative;
+}
+
+.coinflip-avatar {
+    height: 150px;
+    border-radius: 5px;
+}
+
+.coinflip-side-image {
+    width: 50px;
+    position: absolute;
+    top: 120px;
+    cursor: pointer;
+}
+
+.coinflip-side-image-user {
+    left: 80px;
+}
+
+.coinflip-side-image-enemy {
+    right: 80px;
+}
+
+.cssload-container{
+    display: block;
+    margin: auto;
+    width:49px;
+}
+
+.cssload-loading{
+    width: 44px;
+    height: 44px;
+    text-align: left;
+    animation:cssload-loading-ani1 2.3s ease-in-out infinite;
+    -o-animation:cssload-loading-ani1 2.3s ease-in-out infinite;
+    -ms-animation:cssload-loading-ani1 2.3s ease-in-out infinite;
+    -webkit-animation:cssload-loading-ani1 2.3s ease-in-out infinite;
+    -moz-animation:cssload-loading-ani1 2.3s ease-in-out infinite;
+}
+.cssload-loading i,
+.cssload-loading i:before{
+    content: "";
+    width: 44px;
+    height: 44px;
+    position: absolute;
+}
+.cssload-loading i{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.cssload-loading i:nth-child(1){
+    /*background: rgb(255,89,84);*/
+    background: rgb(204,186,124);
+    transform:translate(0,-24px);
+    -o-transform:translate(0,-24px);
+    -ms-transform:translate(0,-24px);
+    -webkit-transform:translate(0,-24px);
+    -moz-transform:translate(0,-24px);
+}
+.cssload-loading i:nth-child(1):before{
+    background: rgb(0,168,206);
+    /*background: rgb(90,113,127);*/
+    bottom: 0;
+    animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -o-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -ms-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -webkit-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -moz-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+}
+.cssload-loading i:nth-child(2){
+    background: rgb(0,168,206);
+    /*background: rgb(90,113,127);*/
+    transform:translate(0,24px);
+    -o-transform:translate(0,24px);
+    -ms-transform:translate(0,24px);
+    -webkit-transform:translate(0,24px);
+    -moz-transform:translate(0,24px);
+}
+.cssload-loading i:nth-child(2):before{
+    animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -o-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -ms-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -webkit-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    -moz-animation:cssload-loading-ani2 2.3s ease-in-out infinite;
+    /*background: rgb(255,89,84);*/
+    background: rgb(204,186,124);
+}
+
+
+
+@keyframes cssload-loading-ani1{
+    40%,50%{
+        transform:rotate(180deg);
+    }
+    90%,100%{
+        transform:rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-loading-ani1{
+    40%,50%{
+        -o-transform:rotate(180deg);
+    }
+    90%,100%{
+        -o-transform:rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-loading-ani1{
+    40%,50%{
+        -ms-transform:rotate(180deg);
+    }
+    90%,100%{
+        -ms-transform:rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-loading-ani1{
+    40%,50%{
+        -webkit-transform:rotate(180deg);
+    }
+    90%,100%{
+        -webkit-transform:rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-loading-ani1{
+    40%,50%{
+        -moz-transform:rotate(180deg);
+    }
+    90%,100%{
+        -moz-transform:rotate(360deg);
+    }
+}
+
+@keyframes cssload-loading-ani2{
+    40%,100%{
+        heighAt:100%;
+    }
+    50%,90%{
+        height:0;
+    }
+}
+
+@-o-keyframes cssload-loading-ani2{
+    40%,100%{
+        height:100%;
+    }
+    50%,90%{
+        height:0;
+    }
+}
+
+@-ms-keyframes cssload-loading-ani2{
+    40%,100%{
+        height:100%;
+    }
+    50%,90%{
+        height:0;
+    }
+}
+
+@-webkit-keyframes cssload-loading-ani2{
+    40%,100%{
+        height:100%;
+    }
+    50%,90%{
+        height:0;
+    }
+}
+
+@-moz-keyframes cssload-loading-ani2{
+    40%,100%{
+        height:100%;
+    }
+    50%,90%{
+        height:0;
+    }
+}
+
+#cssload {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 44%;
+}
+
+.result-info {
+    display: none;
+}
+
+.result-info h3 {
+    margin-top: 0;
+}
+
+/*
+* Contract logs page
+*/
+
+.contract-log-user-items {
+
+}
+
+.contract-log-received-item {
+    margin-top: 100px;
+}
+
+/*
+* Coinflip logs page
+ */
+
+.coinflip-side-image-log {
+    position: relative;
+    top: -20%;
+    left: -43%;
+}

@@ -1,0 +1,92 @@
+<?php
+
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateItemsCasesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('items_cases', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->string('description');
+            $table->string('image');
+            $table->float('price')->nullable();
+            $table->boolean('collection')->default(false);
+            $table->boolean('souvenir')->default(false);
+            $table->string('rare_image')->nullable();
+            $table->string('rare_title')->nullable();
+            $table->timestamps();
+        });
+
+        DB::table('items_cases')->insert(
+            [
+                ['title' => 'CS:GO Weapon Case', 'description' => 'The Arms Deal Collection', 'image' => 'csgo_weapon_case.png', 'price' => '7.01', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2013, 8, 14), 'updated_at' => \Carbon\Carbon::createFromDate(2013, 8, 14)],
+                ['title' => 'eSports 2013 Case', 'description' => 'The eSports 2013 Collection', 'image' => 'esports_2013_case.png', 'price' => '7.59', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2013, 8, 14), 'updated_at' => \Carbon\Carbon::createFromDate(2013, 8, 14)],
+                ['title' => 'Operation Bravo Case', 'description' => 'The Bravo Collection', 'image' => 'operation_bravo_case.png', 'price' => '9.95', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2013, 9, 19), 'updated_at' => \Carbon\Carbon::createFromDate(2013, 9, 19)],
+                ['title' => 'CS:GO Weapon Case 2', 'description' => 'The Arms Deal 2 Collection', 'image' => 'csgo_weapon_case_2.png', 'price' => '0.88', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2013, 11, 6), 'updated_at' => \Carbon\Carbon::createFromDate(2013, 11, 6)],
+                ['title' => 'eSports 2013 Winter Case', 'description' => 'The eSports 2013 Winter Collection', 'image' => 'esports_2013_winter_case.png', 'price' => '0.18', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2013, 12, 18), 'updated_at' => \Carbon\Carbon::createFromDate(2013, 12, 18)],
+                ['title' => 'Winter Offensive Weapon Case', 'description' => 'The Winter Offensive Collection', 'image' => 'winter_offensive_weapon_case.png', 'price' => '1.15', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2013, 12, 18), 'updated_at' => \Carbon\Carbon::createFromDate(2013, 12, 18)],
+                ['title' => 'CS:GO Weapon Case 3', 'description' => 'The Arms Deal 3 Collection', 'image' => 'csgo_weapon_case_3.png', 'price' => '0.20', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2014, 2, 12), 'updated_at' => \Carbon\Carbon::createFromDate(2014, 2, 12)],
+                ['title' => 'Operation Phoenix Weapon Case', 'description' => 'The Phoenix Collection', 'image' => 'operation_phoenix_weapon_case.png', 'price' => '0.07', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2014, 2, 20), 'updated_at' => \Carbon\Carbon::createFromDate(2014, 2, 20)],
+                ['title' => 'Huntsman Weapon Case', 'description' => 'The Huntsman Collection', 'image' => 'huntsman_weapon_case.png', 'price' => '0.98', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_huntsman.png', 'rare_title' => '&#9733; Huntsman Knife &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2014, 5, 1), 'updated_at' => \Carbon\Carbon::createFromDate(2014, 5, 1)],
+                ['title' => 'Operation Breakout Weapon Case', 'description' => 'The Breakout Collection', 'image' => 'operation_breakout_weapon_case.png', 'price' => '0.03', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_butterfly.png', 'rare_title' => '&#9733; Butterfly Knife &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2014, 7, 1), 'updated_at' => \Carbon\Carbon::createFromDate(2014, 7, 1)],
+                ['title' => 'eSports 2014 Summer Case', 'description' => 'The eSports 2014 Summer Collection', 'image' => 'esports_2014_summer_case.png', 'price' => '0.20', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2014, 7, 10), 'updated_at' => \Carbon\Carbon::createFromDate(2014, 7, 10)],
+                ['title' => 'Operation Vanguard Weapon Case', 'description' => 'The Vanguard Collection', 'image' => 'operation_vanguard_weapon_case.png', 'price' => '0.13', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2014, 11, 11), 'updated_at' => \Carbon\Carbon::createFromDate(2014, 11, 11)],
+                ['title' => 'Chroma Case', 'description' => 'The Chroma Collection', 'image' => 'chroma_case.png', 'price' => '0.07', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Chroma Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2015, 1, 8), 'updated_at' => \Carbon\Carbon::createFromDate(2015, 1, 8)],
+                ['title' => 'Chroma 2 Case', 'description' => 'The Chroma 2 Collection', 'image' => 'chroma_2_case.png', 'price' => '0.03', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Chroma Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2015, 4, 15), 'updated_at' => \Carbon\Carbon::createFromDate(2015, 4, 15)],
+                ['title' => 'Falchion Case', 'description' => 'The Falchion Collection', 'image' => 'falchion_case.png', 'price' => '0.04', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Falchion Knife &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2015, 5, 26), 'updated_at' => \Carbon\Carbon::createFromDate(2015, 5, 26)],
+                ['title' => 'Shadow Case', 'description' => 'The Shadow Collection', 'image' => 'shadow_case.png', 'price' => '0.04', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Shadow Daggers &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2015, 9, 17), 'updated_at' => \Carbon\Carbon::createFromDate(2015, 9, 17)],
+                ['title' => 'Revolver Case', 'description' => 'The Revolver Case Collection', 'image' => 'revolver_case.png', 'price' => '0.03', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2015, 12, 8), 'updated_at' => \Carbon\Carbon::createFromDate(2015, 12, 8)],
+                ['title' => 'Operation Wildfire Case', 'description' => 'The Wildfire Collection', 'image' => 'operation_wildfire_case.png', 'price' => '0.03', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Special Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2016, 2, 17), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 2, 17)],
+                ['title' => 'Chroma 3 Case', 'description' => 'The Chroma 3 Collection', 'image' => 'chroma_3_case.png', 'price' => '0.03', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Chroma Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2016, 4, 27), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 4, 27)],
+                ['title' => 'Gamma Case', 'description' => 'The Gamma Collection', 'image' => 'gamma_case.png', 'price' => '0.03', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Gamma Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2016, 6, 15), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 6, 15)],
+                ['title' => 'Gamma 2 Case', 'description' => 'The Gamma 2 Collection', 'image' => 'gamma_2_case.png', 'price' => '0.05', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Gamma Item &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2016, 8, 18), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 8, 18)],
+                ['title' => 'Glove Case', 'description' => 'The Glove Collection', 'image' => 'glove_case.png', 'price' => '0.11', 'collection' => false, 'souvenir' => false, 'rare_image' => 'rare_special_item.png', 'rare_title' => '&#9733; Rare Gloves &#9733;', 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+
+
+                ['title' => 'Alpha Collection', 'description' => 'The Alpha Collection', 'image' => 'alpha_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Assault Collection', 'description' => 'The Assault Collection', 'image' => 'assault_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Aztec Collection', 'description' => 'The Aztec Collection', 'image' => 'aztec_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Baggage Collection', 'description' => 'The Baggage Collection', 'image' => 'baggage_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Bank Collection', 'description' => 'The Bank Collection', 'image' => 'bank_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Cache Collection', 'description' => 'The Cache Collection', 'image' => 'cache_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Chop Shop Collection', 'description' => 'The Chop Shop Collection', 'image' => 'chop_shop_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Cobblestone Collection', 'description' => 'The Cobblestone Collection', 'image' => 'cobblestone_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Dust Collection', 'description' => 'The Dust Collection', 'image' => 'dust_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Dust 2 Collection', 'description' => 'The Dust 2 Collection', 'image' => 'dust_2_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Gods and Monsters Collection', 'description' => 'The Gods and Monsters Collection', 'image' => 'gods_and_monsters_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Inferno Collection', 'description' => 'The Inferno Collection', 'image' => 'inferno_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Italy Collection', 'description' => 'The Italy Collection', 'image' => 'italy_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Lake Collection', 'description' => 'The Lake Collection', 'image' => 'lake_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Militia Collection', 'description' => 'The Militia Collection', 'image' => 'militia_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Mirage Collection', 'description' => 'The Mirage Collection', 'image' => 'mirage_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Nuke Collection', 'description' => 'The Nuke Collection', 'image' => 'nuke_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Office Collection', 'description' => 'The Office Collection', 'image' => 'office_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Overpass Collection', 'description' => 'The Overpass Collection', 'image' => 'overpass_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Rising Sun Collection', 'description' => 'The Rising Sun Collection', 'image' => 'rising_sun_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Safehouse Collection', 'description' => 'The Safehouse Collection', 'image' => 'safehouse_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Train Collection', 'description' => 'The Train Collection', 'image' => 'train_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => true, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)],
+                ['title' => 'Vertigo Collection', 'description' => 'The Vertigo Collection', 'image' => 'vertigo_collection.png', 'price' => NULL, 'collection' => true, 'souvenir' => false, 'rare_image' => NULL, 'rare_title' => NULL, 'created_at' => \Carbon\Carbon::createFromDate(2016, 11, 28), 'updated_at' => \Carbon\Carbon::createFromDate(2016, 11, 28)]
+            ]
+        );
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('items_cases');
+    }
+}
